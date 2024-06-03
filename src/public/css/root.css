@@ -28,4 +28,50 @@ input{
     background-color: rgba(157.5,157.5,157.5,0.15);
     padding:10px;
     border-radius: 5px;
+    font-size:1rem;
+    min-width:200px;
+}
+
+/* Buttons */
+button{
+    all:unset;
+    font-size: 1rem;
+    user-select: none;
+    display:inline;
+    align-items: center;
+
+    min-width:200px;
+}
+button:hover{
+    cursor: pointer;
+}
+.button-outline{
+    background-color: transparent;
+    border: 0.05px solid var(--text-color);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.button-icon{
+    height:1rem;
+    margin-right:5px;
+}
+
+
+/* Helper Classes */
+.text-center{
+    text-align: center;
+}
+.m-auto{
+    margin:auto;
+}
+.block{
+    display: block;
+}
+.fit{
+    width:fit-content;
+    height: fit-content;
+}
+.half-width{
+    width:50%;
 }
