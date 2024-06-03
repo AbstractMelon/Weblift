@@ -28,4 +28,74 @@ input{
     background-color: rgba(157.5,157.5,157.5,0.15);
     padding:10px;
     border-radius: 5px;
+    font-size:1rem;
+    min-width:200px;
+}
+
+/* Default Button */
+button{
+    all:unset;
+    font-size: 1rem;
+    user-select: none;
+    display:inline;
+    align-items: center;
+
+    min-width:200px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin:2px;
+
+    transition: background-color 0.1s ease-in-out, filter 0.1s ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/* Outlined Button */
+.button-outline{
+    background-color: rgba(0,0,0,0);
+    border: 0.05px solid var(--text-color);
+}
+.button-outline:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+.button-outline:active{
+    background-color: rgba(127.5,127.5,127.5,0.05);
+}
+
+/* Filled Button */
+.button-filled{
+    background-color: #0079f2;
+}
+.button-filled:hover{
+    filter:brightness(1.25);
+}
+.button-filled:active{
+    filter:brightness(1.1);
+}
+
+
+/* Icons */
+.button-icon{
+    height:1rem;
+    margin-right:5px;
+}
+
+
+/* Helper Classes */
+.text-center{
+    text-align: center;
+}
+.m-auto{
+    margin:auto;
+}
+.block{
+    display: block;
+}
+.fit{
+    width:fit-content;
+    height: fit-content;
+}
+.half-width{
+    width:50%;
 }
