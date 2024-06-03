@@ -25,6 +25,11 @@ readdirSync(path.join(__dirname, 'serverScripts')).forEach(file => {
   runScript(path.join(__dirname, 'serverScripts', file))
 })
 
+
+// * Warning: 404 script, this should always be the last script
+runScript(path.join(__dirname, 'priorityScripts', '404.ts'))
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
