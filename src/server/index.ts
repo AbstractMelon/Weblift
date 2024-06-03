@@ -1,5 +1,5 @@
 // ! All server scripts should be in the serverScripts folder.
-// ? If the script needs extra priority put it in the priorityScripts folder and then use runScript(path) to run the script.
+// ? If the script needs extra priority put it in the priorityScripts folder and then use runScript(path: string) to run the script.
 
 import express, { Express, Request, Response } from "express";
 import * as path from 'path'
