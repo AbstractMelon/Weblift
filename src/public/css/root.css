@@ -41,6 +41,11 @@ button{
     align-items: center;
 
     min-width:200px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin:2px;
+
+    transition: background-color 0.1s ease-in-out, filter 0.1s ease-in-out;
 }
 button:hover{
     cursor: pointer;
@@ -50,10 +55,6 @@ button:hover{
 .button-outline{
     background-color: rgba(0,0,0,0);
     border: 0.05px solid var(--text-color);
-    padding: 5px 20px;
-    border-radius: 5px;
-
-    transition: background-color 0.2s ease-in;
 }
 .button-outline:hover{
     background-color: rgba(255,255,255,0.1);
@@ -61,6 +62,18 @@ button:hover{
 .button-outline:active{
     background-color: rgba(127.5,127.5,127.5,0.05);
 }
+
+/* Filled Button */
+.button-filled{
+    background-color: #0079f2;
+}
+.button-filled:hover{
+    filter:brightness(1.25);
+}
+.button-filled:active{
+    filter:brightness(1.1);
+}
+
 
 /* Icons */
 .button-icon{
